@@ -139,17 +139,42 @@ function initializeBackToTop() {
     backToTopButton.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
     });
 }
 
+window.addEventListener('load', function () {
+    document.getElementById('preloader').style.display = 'none';
+});
+
 // Inicialização do Site
+function initializeFadeIn() {
+    document.getElementById('content').classList.add('visible');
+}
+
+function initializeScrollAnimations() {
+    const elements = document.querySelectorAll('.scroll-animation');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    elements.forEach((element) => {
+        observer.observe(element);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeNavigation();
     initializeSmoothScroll();
     initializeTypewriter();
     initializeFormHandling();
-    initializeBackToTop(); // Adicione esta linha
-    // Outras inicializações...
+    initializeBackToTop();
+    initializePreloader();
+    initializeFadeIn();
+    initializeScrollAnimations();
 });
