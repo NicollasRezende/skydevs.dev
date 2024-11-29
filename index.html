@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyDevs | Soluções em Desenvolvimento</title>
+    <meta name="description"
+        content="SkyDevs - Startup especializada em desenvolvimento de websites e softwares desktop">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "FRiU869_NOPP1j2jH", // Substitua 'FRiU869_NOPP1j2jH' pelo seu User ID do EmailJS
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>Sky</span>Devs
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transformando ideias em <span class="highlight">realidade digital</span></h1>
+                <p class="typewriter">Desenvolvimento Web & Desktop</p>
+                <div class="hero-cta">
+                    <a href="#servicos" class="primary-btn">Nossos Serviços</a>
+                    <a href="#contato" class="secondary-btn">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="icon-wrapper">
+                <i class="fas fa-cloud"></i>
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <p>Somos uma startup inovadora composta por alguns desenvolvedores apaixonados por tecnologia. Nossa
+                    missão é criar soluções digitais que transformam e impulsionam o sucesso dos nossos clientes.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Projetos Entregues</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Clientes Satisfeitos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Suporte Técnico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites responsivos, e-commerce e aplicações web personalizadas com as tecnologias mais modernas do
+                        mercado.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Design Responsivo</li>
+                        <li><i class="fas fa-check"></i> Otimização SEO</li>
+                        <li><i class="fas fa-check"></i> Performance Garantida</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Software Desktop</h3>
+                    <p>Sistemas desktop robustos e eficientes para automatizar e otimizar processos empresariais.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Interface Intuitiva</li>
+                        <li><i class="fas fa-check"></i> Alta Performance</li>
+                        <li><i class="fas fa-check"></i> Suporte Contínuo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe Section -->
+    <section id="equipe" class="team">
+        <div class="container">
+            <h2 class="section-title">Nossa Equipe</h2>
+            <div class="team-grid">
+                <!-- Nicollas -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="imgs/nicollas.jpg" alt="Desenvolvedor Frontend">
+                    </div>
+                    <h3>Nicollas Rezende</h3>
+                    <p class="member-role">Full Stack DEV</p>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/nicollas-rezende/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/NicollasRezende"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Erika -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="imgs/nicollas.jpg" alt="Desenvolvedor Frontend">
+                    </div>
+                    <h3>Nicollas Rezende</h3>
+                    <p class="member-role">Full Stack DEV</p>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/nicollas-rezende/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/NicollasRezende"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Petter -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="imgs/nicollas.jpg" alt="Desenvolvedor Frontend">
+                    </div>
+                    <h3>Nicollas Rezende</h3>
+                    <p class="member-role">Full Stack DEV</p>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/nicollas-rezende/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/NicollasRezende"><i class="fab fa-github"></i></a>
+                    </div>
+                    <!-- Vitor -->
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="imgs/nicollas.jpg" alt="Desenvolvedor Frontend">
+                    </div>
+                    <h3>Nicollas Rezende</h3>
+                    <p class="member-role">Full Stack DEV</p>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/nicollas-rezende/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/NicollasRezende"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contato@skydevs.com">contato@skydevs.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+5561999999999">(61) 99999-9999</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/5561999999999" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" required placeholder="Seu Nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Seu Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" required placeholder="Sua Mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="primary-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão de Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Sky</span>Devs
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 SkyDevs. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
