@@ -313,6 +313,10 @@ body {
     background: var(--bg-secondary);
 }
 
+.about p {
+    text-align: center;
+}
+
 .section-title {
     font-size: 2.5rem;
     text-align: center;
